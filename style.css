@@ -1,1 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f5d6c2;
+}
 
+.page {
+  display: grid;
+  grid-template-columns: 32% 48% 20%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.left {
+  padding: 90px 35px;
+}
+
+.left h1 {
+  margin: 0;
+  color: #b68c2e;
+  font-size: 38px;
+}
+
+.left h2 {
+  margin-top: 5px;
+  color: #b68c2e;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.left p {
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+.links {
+  margin-top: 35px;
+}
+
+.links a {
+  display: block;
+  margin: 12px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+main {
+  padding: 28px 18px;
+  background: white;
+}
+
+.hero {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background: #eee2d7;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero div {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 1;
+  padding: 10px;
+  background: #fff5e8;
+}
+
+.hero div p {
+  color: #9d7625;
+  font-size: 11px;
+}
+
+.hero div h2 {
+  color: #9d7625;
+  font-size: 19px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #b68c2e;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.section-title,
+.about h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+}
+
+.cards article {
+  flex: 1;
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+}
+
+.cards h3 {
+  font-size: 14px;
+}
+
+.about {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.right {
+  padding: 20px 12px;
+  background: #fffaf6;
+}
+
+.right h2 {
+  font-size: 18px;
+}
+
+.right img {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+}
+
+.right p {
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    padding: 35px 25px;
+  }
+
+  .right {
+    display: none;
+  }
+}.left h1 {
+  font-size: 46px;
+}
+
+.left h2 {
+  font-size: 24px;
+}
+
+.left p,
+.links a {
+  font-size: 17px;
+}
+
+.hero div h2 {
+  font-size: 23px;
+}
+
+.section-title,
+.about h2,
+.right h2 {
+  font-size: 21px;
+}
+
+.cards h3,
+.right p {
+  font-size: 16px;
+}
